@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="428.0" prefWidth="743.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <ChoiceBox fx:id="timeOptions" layoutX="14.0" layoutY="14.0" prefWidth="192.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <Button fx:id="execute" layoutX="18.0" layoutY="393.0" mnemonicParsing="false" text="Execute" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#560099" height="250.0" layoutX="48.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#560099" height="250.0" layoutX="149.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00993d" height="250.0" layoutX="187.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00993d" height="250.0" layoutX="298.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="250.0" layoutX="560.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="38.0">
+      <fill>
+        <Color blue="0.600" green="0.000" red="0.337" fx:id="x1" />
+      </fill>
+    </Rectangle>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x1" height="250.0" layoutX="661.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="250.0" layoutX="411.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="38.0">
+      <fill>
+        <Color blue="0.239" green="0.600" red="0.000" fx:id="x2" />
+      </fill>
+    </Rectangle>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x2" height="250.0" layoutX="522.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="38.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9f9f9f" height="250.0" layoutX="336.0" layoutY="95.0" stroke="BLACK" strokeType="INSIDE" width="75.0" />
+    <Label fx:id="laneZeroTotalCars" layoutX="83.0" layoutY="46.0" text="Total cars:" />
+    <Label fx:id="laneZeroTotalTrucks" layoutX="83.0" layoutY="69.0" text="Total trucks:" />
+    <Label id="laneZeroTotalCars" fx:id="laneOneTotalCars" layoutX="230.0" layoutY="46.0" text="Total cars:" />
+    <Label fx:id="laneOneTotalTrucks" layoutX="230.0" layoutY="69.0" text="Total trucks:" />
+    <Label fx:id="laneTwoTotalCars" layoutX="454.0" layoutY="43.0" text="Total cars:" />
+    <Label fx:id="laneTwoTotalTrucks" layoutX="454.0" layoutY="66.0" text="Total trucks:" />
+    <Label fx:id="laneThreeTotalCars" layoutX="603.0" layoutY="46.0" text="Total cars:" />
+    <Label id="lane3TotalTrucks" fx:id="laneThreeTotalTrucks" layoutX="603.0" layoutY="69.0" text="Total trucks:" />
+    <Label id="laneZeroAverageTime" fx:id="laneZeroTime" layoutX="83.0" layoutY="359.0" text="Time:" />
+    <Label id="laneOneAverageTime" fx:id="laneOneTime" layoutX="225.0" layoutY="359.0" text="Time:" />
+    <Label id="laneTwoAverageTime" fx:id="laneTwoTime" layoutX="449.0" layoutY="362.0" text="Time:" />
+    <Label id="laneThreeAverageTime" fx:id="laneThreeTime" layoutX="594.0" layoutY="365.0" text="Time:" />
+    <Rectangle fx:id="laneZeroTruck" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.00010681152344" layoutX="91.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="49.0" />
+    <Rectangle fx:id="laneOneTruck" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.00010681152344" layoutX="238.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="49.0" />
+    <Rectangle id="laneTwoTuck" fx:id="laneTwoTruck" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.00010681152344" layoutX="462.0" layoutY="130.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="49.0" />
+    <Rectangle fx:id="laneThreeTruck" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.00010681152344" layoutX="606.0" layoutY="130.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="49.0" />
+    <Rectangle fx:id="laneZeroCar" arcHeight="5.0" arcWidth="5.0" height="91.0" layoutX="91.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="49.0">
+      <fill>
+        <Color blue="0.200" green="0.200" red="1.000" fx:id="x3" />
+      </fill>
+    </Rectangle>
+    <Rectangle fx:id="laneOneCar" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="91.0" layoutX="238.0" layoutY="175.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="49.0" />
+    <Rectangle fx:id="laneTwoCar" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="91.0" layoutX="462.0" layoutY="185.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="49.0" />
+    <Rectangle fx:id="laneThreeCar" arcHeight="5.0" arcWidth="5.0" fill="$x3" height="91.0" layoutX="606.0" layoutY="185.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="49.0" />
+    <Label fx:id="totalNumCars" layoutX="225.0" layoutY="396.0" text="Cars:" />
+    <Label fx:id="totalNumTrucks" layoutX="449.0" layoutY="396.0" text="Trucks:" />
+    <Label fx:id="time" layoutX="225.0" layoutY="17.0" text="" />
+  </children>
+</AnchorPane>
